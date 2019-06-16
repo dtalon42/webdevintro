@@ -13,7 +13,7 @@
 
     <body>
         <Header>
-            <h1>The Dog Kennel</h1>
+            <h1><strong>The Dog Kennel</strong></h1>
         </Header>
         <hr />
         <nav>
@@ -22,40 +22,40 @@
                 <a href="contact.html">Contact Us</a>
                 <hr/>
         </nav>
-        <hr/>
+        
 
         <form action="submit.html" method="POST">
-                <label for="name">Name: </label><br/>
+                <label for="name">Name: </label>
                 <input type="text" id="name" name="name"> <br/>
                 
-                <label for="email">Email: </label><br/>
+                <label for="email">Email: </label>
                 <input type="text" id="email" name="email"> <br/>
                 
-                <label for="phone">Phone Number: </label><br/>
+                <label for="phone">Phone Number: </label>
                 <input type="text" id="phone" name="phone"> <br/>
       
-                <label for="contact">Reason for Inquiry:</label><br/>
+                <label for="contact">Reason for Inquiry:</label>
                 <select id="contact" name="contact">
                   <option value="default" selected>Catering</option>
                   <option value="morning">Private Party</option>
                   <option value="afternoon">Feedback</option>
                   <option value="evening">Other</option>
                 </select><br/>
-
-                <label for="info">Additonal Information</label><br />
+                
+                <label for="info">Additonal Information: </label>
                 <textarea id="info" name="info"></textarea> <br/>
 
-                <fieldset>
-                        <legend>Have you been to our stand?</legend> <br/>
+                
+                        <label>Have you been to our stand?</label> 
                         <input type="radio" id="choice1" name="questionnaire" value="yes">
-                        <label for="choice1">No</label><br/>
+                        <label for="choice1">No</label>
                         <input type="radio" id="choice2" name="questionnaire" value="no">
                         <label for="choice2">Yes</label><br/>
                         
-                </fieldset>
+                
       
-                <fieldset>
-                  <legend>Best days to contact you:</legend><br/>
+                
+                  <label>Best days to contact you:</label>
                   <input type="checkbox" id="monday" name="contactDay" value="monday">
                   <label for="monday">M</label>
       
@@ -70,9 +70,9 @@
 
                   <input type="checkbox" id="fri" name="contactDay" value="fri">
                   <label for="fri">F</label>
-                </fieldset>
+                
       
-                <input type="submit" name="submit" value="Send Request"><br />
+                <br/><input type="submit" name="submit" value="Send Request"><br />
                 <hr/>
 
 
