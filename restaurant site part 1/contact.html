@@ -1,0 +1,86 @@
+<!doctype html>
+<!--
+    Name: Keith Farwell
+    Date Created 6/15/2019
+    Most recent revision:
+--> 
+<html lang="en">
+    <head>
+<title>
+  Contact Us  
+</title>
+    </head>
+
+    <body>
+        <Header>
+            <h1>The Dog Kennel</h1>
+        </Header>
+        <hr />
+        <nav>
+                <a href="homePage.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="contact.html">Contact Us</a>
+                <hr/>
+        </nav>
+        <hr/>
+
+        <form action="submit.html" method="POST">
+                <label for="name">Name: </label><br/>
+                <input type="text" id="name" name="name"> <br/>
+                
+                <label for="email">Email: </label><br/>
+                <input type="text" id="email" name="email"> <br/>
+                
+                <label for="phone">Phone Number: </label><br/>
+                <input type="text" id="phone" name="phone"> <br/>
+      
+                <label for="contact">Reason for Inquiry:</label><br/>
+                <select id="contact" name="contact">
+                  <option value="default" selected>Catering</option>
+                  <option value="morning">Private Party</option>
+                  <option value="afternoon">Feedback</option>
+                  <option value="evening">Other</option>
+                </select><br/>
+
+                <label for="info">Additonal Information</label><br />
+                <textarea id="info" name="info"></textarea> <br/>
+
+                <fieldset>
+                        <legend>Have you been to our stand?</legend> <br/>
+                        <input type="radio" id="choice1" name="questionnaire" value="yes">
+                        <label for="choice1">No</label><br/>
+                        <input type="radio" id="choice2" name="questionnaire" value="no">
+                        <label for="choice2">Yes</label><br/>
+                        
+                </fieldset>
+      
+                <fieldset>
+                  <legend>Best days to contact you:</legend><br/>
+                  <input type="checkbox" id="monday" name="contactDay" value="monday">
+                  <label for="monday">M</label>
+      
+                  <input type="checkbox" id="tuesday" name="contactDay" value="tuesday">
+                  <label for="tuesday">T</label>
+
+                  <input type="checkbox" id="wed" name="contactDay" value="wed">
+                  <label for="wed">W</label>
+
+                  <input type="checkbox" id="thur" name="contactDay" value="thur">
+                  <label for="thur">Th</label>
+
+                  <input type="checkbox" id="fri" name="contactDay" value="fri">
+                  <label for="fri">F</label>
+                </fieldset>
+      
+                <input type="submit" name="submit" value="Send Request"><br />
+                <hr/>
+
+
+        <footer>
+            <p>123 Lost Way, Emerald City, Oz 87390</p>
+            <p>(425) 867 5309</p>
+            
+        </footer>
+
+    </body>
+</html>
