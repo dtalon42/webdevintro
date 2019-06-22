@@ -1,0 +1,147 @@
+<!doctype html>
+<!--
+    Name: Keith Farwell
+    Date Created 6/15/2019
+    Most recent revision:
+--> 
+<html lang="en">
+    <head>
+<title>
+  Contact Us  
+</title>
+<link href="restaurantStyle.css" rel="stylesheet" type="text/css"/>
+    </head>
+<style>
+body{
+    background-color: lightblue;
+}
+label {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+input[type=text] {
+    border: 2px solid #0d1f2d;
+    width: 50%;
+    padding: 8px 8px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    font-size: 1.1em;
+
+}
+
+fieldset {
+    background-color: #fef9ff;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    box-sizing: border-box;
+}
+
+select, textarea {
+    margin: 12px 0;
+    font-size: 1em;
+}
+
+input[type=submit] {
+    font-size: 1.2em;
+    background-color: #546a7b;
+    color: #fef9ff;
+    padding: 4px 8px;
+}
+
+input[type=submit]:hover {
+    background-color: #f2eded;
+    color: #546a7b;
+}
+
+
+textarea {
+    
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    border: 2px solid #0d1f2d;
+    border-radius: 3px;
+    background-color: #fff;
+    resize: none;
+}
+
+
+
+</style>
+    <body>
+        <Header>
+            <h1><strong>The Dog Kennel</strong></h1>
+        </Header>
+        
+        <nav>
+                <a href="homePage.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="contact.html">Contact Us</a>
+                <hr/>
+        </nav>
+        
+
+        <form action="submit.html" method="POST">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name"> <br/>
+                
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email"> <br/>
+                
+                <label for="phone">Phone Number: </label>
+                <input type="text" id="phone" name="phone"> <br/>
+      
+                <label for="contact">Reason for Inquiry:</label>
+                <select id="contact" name="contact">
+                  <option value="default" selected>Catering</option>
+                  <option value="morning">Private Party</option>
+                  <option value="afternoon">Feedback</option>
+                  <option value="evening">Other</option>
+                </select><br/>
+                
+                <label for="info">Additonal Information: </label>
+                <textarea id="info" name="info"></textarea> <br/>
+                
+                
+                        <label>Have you been to our stand?</label> 
+                        <input type="radio" id="choice1" name="questionnaire" value="yes">
+                        <label for="choice1">No</label>
+                        <input type="radio" id="choice2" name="questionnaire" value="no">
+                        <label for="choice2">Yes</label><br/>
+                        
+                
+      
+                
+                  <label>Best days to contact you:</label>
+                  <input type="checkbox" id="monday" name="contactDay" value="monday">
+                  <label for="monday">M</label>
+      
+                  <input type="checkbox" id="tuesday" name="contactDay" value="tuesday">
+                  <label for="tuesday">T</label>
+
+                  <input type="checkbox" id="wed" name="contactDay" value="wed">
+                  <label for="wed">W</label>
+
+                  <input type="checkbox" id="thur" name="contactDay" value="thur">
+                  <label for="thur">Th</label>
+
+                  <input type="checkbox" id="fri" name="contactDay" value="fri">
+                  <label for="fri">F</label>
+                
+      
+                <br/><input type="submit" name="submit" value="Send Request"><br />
+                <hr/>
+
+
+        <footer>
+            <p>123 Lost Way, Emerald City, Oz 87390</p>
+            <p>(425) 867 5309</p>
+            
+        </footer>
+
+    </body>
+</html>
